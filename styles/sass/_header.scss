@@ -1,0 +1,118 @@
+.navigation {
+  display: flex;
+}
+
+.navigation .menuToogle {
+  width: 70px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(124, 124, 124);
+    transform: translateY(-8px);
+    transition: 0.3s;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(124, 124, 124);
+    transform: translateY(8px);
+    transition: 0.3s;
+    box-shadow: 0 -8px 0 rgb(124, 124, 124);
+  }
+}
+
+.navigation .nav-menus .navmenu-toggle {
+  display: none;
+}
+
+.navigation.active .nav-menus .navmenu-toggle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 888;
+  background: rgb(231, 231, 231);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 20em;
+  height: 370px;
+}
+
+.navigation.active .menu-estrutural {
+  opacity: 0;
+}
+
+.navigation .nav-menus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navigation.active .menuToogle {
+  &::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  &::after {
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 #333;
+  }
+}
+
+.navigation.active ul li a .text {
+  color: rgb(94, 93, 93);
+  opacity: 1;
+  visibility: visible;
+  transition: ease 0.3s;
+}
+
+.navigation .menu-estrutural nav ul li a {
+  font-size: 0.8em;
+  color: rgb(94, 93, 93);
+  transition: 0.3s ease;
+}
+
+.logo h3 {
+  width: 50px;
+  color: rgb(94, 93, 93);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    p {
+      color: rgb(94, 93, 93);
+      font-size: 0.8em;
+      text-align: center;
+      transition: ease 0.3s;
+    }
+    .icon {
+      color: rgb(94, 93, 93);
+      font-size: 1.5em;
+      transition: ease 0.3s;
+    }
+  }
+}

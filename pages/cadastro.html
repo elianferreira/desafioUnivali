@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Desafio - Univali</title>
+  </head>
+  <style></style>
+  <body>
+    <header>
+      <div class="navigation">
+        <div class="nav-menus">
+          <div class="menuToogle"></div>
+          <ul class="navmenu-toggle">
+            <li class="nav-list active">
+              <a href="../index.html">
+                <span class="text">Listagem</span>
+              </a>
+            </li>
+            <li class="nav-list">
+              <a href="../pages/cadastro.html">
+                <span class="text">Cadastro</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="menu-estrutural">
+            <nav>
+              <ul>
+                <li><a href="../index.html">Listagem</a></li>
+                <li><a href="../pages/cadastro.html">Cadastro</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="logo">
+        <h3>Univali</h3>
+      </div>
+
+      <div class="social-media">
+        <span>
+          <ion-icon class="icon" name="call-outline"></ion-icon>
+          <p>(47) 99130-0269</p>
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-hero">
+        <span>Comece agora!</span>
+        <h1>Cadastre seu produto online!</h1>
+      </div>
+      <div class="content">
+        <form action="">
+          <div class="grid-row-1">
+            <div class="nameItem form-item">
+              <label for="">Nome do item</label>
+              <input class="inputNameItem" type="text" maxlength="50" />
+            </div>
+            <div class="unidadeMedida form-item">
+              <label for="">Unidade de Medida</label>
+              <select aria-label="" class="inputUnidadeMedida">
+                <option>Selecione a medida</option>
+                <option value="1" selected>Litro</option>
+                <option value="2">Quilograma</option>
+                <option value="3">Unidade</option>
+              </select>
+            </div>
+            <div class="qtdItem form-item">
+              <label for="">Quantidade</label>
+              <input class="inputQtdItem" type="number" maxlength="50" />
+            </div>
+          </div>
+
+          <div class="grid-row-1">
+            <div class="precoItem form-item">
+              <label for="">Preço</label>
+              <input class="inputPrecoItem" type="number" maxlength="50" />
+            </div>
+            <div class="prodFabricacao form-item">
+              <label for="">Data Fabricação</label>
+              <input class="inputProdFabricacao" type="date" name="" id="" />
+            </div>
+            <div class="prodValidade form-item">
+              <label for="">Data Validade</label>
+              <input class="inputProdValidade" type="date" name="" id="" />
+            </div>
+          </div>
+
+          <div class="prodPerecivel form-item">
+            <label for="">Produto Perecível?</label>
+            <input class="inputProdPerecivel" type="checkbox" />
+          </div>
+
+          <div class="btn-submit">
+            <button
+              class="submitButton"
+              onclick="cadastrarProduto()"
+              type="submit"
+            >
+              Cadastrar
+            </button>
+            <button class="cancelButton" type="button">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/form.js"></script>
+  </body>
+</html>

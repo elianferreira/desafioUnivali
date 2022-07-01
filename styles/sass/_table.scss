@@ -1,0 +1,52 @@
+.content-table {
+  width: 100%;
+  background: #e1e1e1;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  padding: 20px;
+  border-collapse: collapse;
+  transition: 0.4s ease;
+
+  thead {
+    text-align: center;
+    border-bottom: 1px solid #c1c1c1;
+
+    tr {
+      height: 50px;
+    }
+  }
+
+  tbody {
+    text-align: center;
+
+    tr {
+      height: 50px;
+      border-bottom: 1px solid #c1c1c1;
+    }
+  }
+}
+
+.content-table.active {
+  transform: translateY(-3000px);
+  transition: 0.4s ease;
+}
+
+.btn-table {
+  width: 80%;
+  height: 100%;
+  background: rgba(29, 144, 245, 0.587);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+
+  padding: 8px;
+}

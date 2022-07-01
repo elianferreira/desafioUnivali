@@ -1,0 +1,78 @@
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .navigation .menu-estrutural {
+    display: none;
+  }
+
+  .social-media {
+    display: none;
+  }
+
+  .navigation.active .nav-menus .navmenu-toggle {
+    width: 100%;
+    height: 100vh;
+    font-size: 1.5em;
+  }
+
+  main {
+    height: 130vh;
+  }
+
+  .text-hero {
+    span {
+      font-size: 0.7em;
+    }
+    h1 {
+      font-size: 1.3em;
+    }
+  }
+
+  form {
+    .form-item {
+      width: 100%;
+      height: 90px;
+
+      &::after {
+        top: 40px;
+      }
+    }
+
+    .grid-row-1 {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .btn-submit {
+      width: 100%;
+      height: 120px;
+      flex-direction: column;
+    }
+  }
+
+  .content-table {
+    thead {
+      display: none;
+    }
+
+    tbody {
+      tr {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        td {
+          width: 100%;
+          button {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
